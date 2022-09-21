@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
+    height: 100%;
 }
 
 .nav-bar {
@@ -59,7 +60,8 @@ body {
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    /* height: 320px; */
+    height: 100vh;
     margin-bottom: 50px;
 }
 
