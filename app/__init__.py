@@ -11,11 +11,11 @@ app = Flask(__name__)
 users = [
     {'pic': '/static/img/logo.jpg',
     'name': "jane",
-    'intro': "hi, my name is user 1",
+    'intro': "hi, my name is user fsdfjgsdjkfnglsdfkgs",
     'edu': {
-        "Bachelors in A": 2018,
-        "Masters in B": 2023, 
-        "PhD in C": 2040
+        "Bachelors in A": 2028,
+        "Masters in B": 2033, 
+        "PhD in C": 2045
     },
     # 'hobbies': ["x","y","z"],
     'work': {
@@ -26,7 +26,7 @@ users = [
     },
     {'pic': '/static/img/logo.jpg',
     'name': "serenity",
-    'intro': "hi, my name is user 1",
+    'intro': "hi, my name is ufsdfsdfsd",
     'edu': {
         "Bachelors in A": 2018,
         "Masters in B": 2023, 
