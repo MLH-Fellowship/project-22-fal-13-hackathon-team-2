@@ -8,6 +8,30 @@ app = Flask(__name__)
 
 
 
+@app.route('/')
+def index():
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), users=users)
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html', title="MLH Fellow", url=os.getenv("URL"))
+
+
+@app.route('/user/<id>/')
+def user(id):
+    try:
+        user = users[int(id)]
+        return render_template('user.html', **user)
+    except Exception as e:
+        return f"User not found! {id}"
+
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies.html')
+
+    
+    
+
 users = [
     {'pic': '/static/img/logo.jpg',
     'name': "jane",
@@ -55,28 +79,3 @@ users = [
     }
     }
 ]
-
-@app.route('/')
-def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), users=users)
-
-@app.route('/profile')
-def profile():
-    return render_template('profile.html', title="MLH Fellow", url=os.getenv("URL"))
-
-
-@app.route('/user/<id>/')
-def user(id):
-    try:
-        user = users[int(id)]
-        return render_template('user.html', **user)
-    except Exception as e:
-        return f"User not found! {id}"
-
-@app.route('/hobbies')
-def hobbies():
-    return render_template('hobbies.html')
-
-    
-    
-
