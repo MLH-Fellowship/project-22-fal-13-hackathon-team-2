@@ -59,7 +59,8 @@ body {
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    /* height: 320px; */
+    height: 100vh;
     margin-bottom: 50px;
 }
 
