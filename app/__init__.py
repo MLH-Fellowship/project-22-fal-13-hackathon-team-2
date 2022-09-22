@@ -12,9 +12,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), users=users)
 
-@app.route('/profile')
-def profile():
-    return render_template('profile.html', title="MLH Fellow", url=os.getenv("URL"))
+# @app.route('/profile')
+# def profile():
+#     return render_template('profile.html', title="MLH Fellow", url=os.getenv("URL"))
 
 
 @app.route('/user/<id>/')
@@ -34,7 +34,7 @@ def hobbies():
 
 users = [
     {'pic': '/static/img/logo.jpg',
-    'name': "jane",
+    'name': "serenity",
     'intro': "hi, my name is user fsdfjgsdjkfnglsdfkgs",
     'edu': {
         "Bachelors in A": 2028,
@@ -49,7 +49,7 @@ users = [
     }
     },
     {'pic': '/static/img/logo.jpg',
-    'name': "serenity",
+    'name': "jo",
     'intro': "hi, my name is ufsdfsdfsd",
     'edu': {
         "Bachelors in A": 2018,
@@ -64,7 +64,7 @@ users = [
     }
     },
     {'pic': '/static/img/logo.jpg',
-    'name': "jo",
+    'name': "jane",
     'intro': "hi, my name is user 1",
     'edu': {
         "Bachelors in A": 2018,
@@ -78,4 +78,7 @@ users = [
         "company C": 2024
     }
     }
+    
+    
+    
 ]
