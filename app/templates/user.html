@@ -1,9 +1,8 @@
 {% extends 'profile.html' %} {% block about %}
-<a href="/">
-    <div id="profile-picture" class="profile-picture">
-        <img src="{{ pic }}">
-    </div>
-</a>
+
+
+<img src="{{ pic }}" class="picture" style="max-width: 200px !important;">
+
 <h1>{{name}}</h1>
 <p>{{intro}}</p>
 {% endblock %} {% block education %} {% for k,v in edu.items() %}

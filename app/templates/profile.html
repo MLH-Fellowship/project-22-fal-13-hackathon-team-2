@@ -34,10 +34,10 @@
 
 
     <!-- Used Bootstrap instead -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
         <a href="/">
             <div class="nav-logo">
-                <img src="/static/img/logo.svg" />
+                <img src="/static/img/logo_chicken_reverse.png" />
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,28 +55,35 @@
                     <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/hobbies">Hobbies</a>
+                    <a class="nav-link" href="#places">Places</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#places">Places</a>
+                    <a class="nav-link" href="/hobbies"> Our Hobbies</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="profile">
-        {% block about %}{% endblock %}
-    </div>
 
-    <div class="profile" id="education">
-        <h1>Education</h1>
-        {% block education %}{% endblock %}
-    </div>
+    <section class="about">
+        <div class="box text-center">
+            {% block about %}{% endblock %}
+        </div>
+    </section>
 
-    <div class="profile" id="work">
-        <h1>Work</h1>
-        <p>{% block work %}{% endblock %}</p>
-    </div>
+    <section class="education" id="education">
+        <div class="box">
+            <h1>Education</h1>
+            {% block education %}{% endblock %}
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="box">
+            <h1>Work</h1>
+            {% block work %}{% endblock %}
+        </div>
+    </section>
 
     <!-- 
     <div class="profile">
@@ -84,10 +91,12 @@
         {% block hobbies %}{% endblock %}
     </div> -->
 
-    <div class="profile" id="places">
-        <h1>Places</h1>
-        <p>{% block places %}{% endblock %}</p>
-    </div>
+    <section class="places" id="places">
+        <div class="box">
+            <h1>Places</h1>
+            {% block places %}{% endblock %}
+        </div>
+    </section>
 
 
 </body>
