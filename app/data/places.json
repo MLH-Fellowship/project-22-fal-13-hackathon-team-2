@@ -1,0 +1,100 @@
+{
+    "places_serena":[
+       {
+          "place":"Dusun Desa Sukadana",
+          "blurb":"Dusun Desa Sukadana is a locality in Western Java.  Sukadana used to be a capital city of a Malay kingdom called Tanjungpura.",
+          "link":"https://en.wikipedia.org/wiki/Sukadana"
+       },
+       {
+          "place":"Creches-sur-Saone",
+          "blurb":"Crêches-sur-Saône is a commune in the Saône-et-Loire department in the region of Bourgogne-Franche-Comté in eastern France.",
+          "link":"https://creches-sur-saone.com/"
+       },
+       {
+          "place":"Pirching am Traubenberg",
+          "blurb":"Pirching am Traubenberg is a municipality in the district of Südoststeiermark in the Austrian state of Styria. ",
+          "link":"https://www.steiermark.com/en/Holiday-regions/Cities-towns/Pirching-am-Traubenberg_c_841655"
+       },
+       {
+          "place":"Dade City",
+          "blurb":"Dade City is popular with tourists for its antique stores, restaurants, and historic architecture, including the Pasco County Courthouse, Hugh Embry Library, and Edwinola.",
+          "link":"https://en.wikipedia.org/wiki/Dade_City,_Florida"
+       },
+       {
+          "place":"Grimbsy",
+          "blurb":"Grimsby lies in the national character areas of the Humber and the Lincolnshire coast and Marshes; it is predominantly low in topography.",
+          "link":"https://en.wikipedia.org/wiki/Grimsby"
+       },
+       {
+          "place":"Porto Novo",
+          "blurb":"Porto-Novo was once a tributary of the Yoruba kingdom of Oyo, which had offered it protection from the neighbouring Fon, who were expanding their influence and power in the region.",
+          "link":"https://en.wikipedia.org/wiki/Porto-Novo"
+       }
+    ],
+    "places_jane":[
+       {
+          "place":"Daming",
+          "blurb":"Daming County is a county under the jurisdiction of Handan City in far southern Hebei Province, China. It was formerly one of the capitals of the Northern Song.",
+          "link":"https://en.wikipedia.org/wiki/Daming_County"
+       },
+       {
+          "place":"Port Willunga",
+          "blurb":"Before the British colonisation of South Australia, the Port Willunga area, along with most of the Adelaide plains area and down the western side of the Fleurieu Peninsula, was inhabited by the Kaurna people.",
+          "link":"https://en.wikipedia.org/wiki/Port_Willunga,_South_Australia"
+       },
+       {
+          "place":"Pirching am Traubenberg",
+          "blurb":"Pirching am Traubenberg is a municipality in the district of Südoststeiermark in the Austrian state of Styria. ",
+          "link":"https://www.steiermark.com/en/Holiday-regions/Cities-towns/Pirching-am-Traubenberg_c_841655"
+       },
+       {
+          "place":"Ḩisyah",
+          "blurb":"Hisyah is a town in central Syria, administratively part of the Homs Governorate, located about 35 kilometers south of Homs.",
+          "link":"https://en.wikipedia.org/wiki/Hisyah"
+       },
+       {
+          "place":"Novotroyits’ke",
+          "blurb":"Until 18 July, 2020, Novotroitske was the administrative center of Novotroitske Raion. The raion was abolished in July 2020 as part of the administrative reform of Ukraine, which reduced the number of raions of Kherson Oblast to five.",
+          "link":"https://en.wikipedia.org/wiki/Novotroitske,_Kherson_Oblast"
+       },
+       {
+          "place":"Howrah",
+          "blurb":"The history of the city of Howrah dates back over 500 years, but the district is situated in an area historically occupied by the ancient Bengali kingdom of Bhurshut.",
+          "link":"https://en.wikipedia.org/wiki/Howrah"
+       }
+    ],
+ 
+    "places_jo":[
+       {
+          "place":"Dorlisheim",
+          "blurb":"Dorlisheim is a commune in the Bas-Rhin department in Grand Est in north-eastern France.",
+          "link":"https://en.wikipedia.org/wiki/Dorlisheim"
+       },
+       {
+          "place":"Bardi",
+          "blurb":"According to a legend, the town's name derives from 'Bardus', or 'Barrio', the last elephant of Hannibal's army, who supposedly died here during the march to Rome.",
+          "link":"https://en.wikipedia.org/wiki/Bardi,_Emilia-Romagna"
+       },
+       {
+          "place":"Yanzihe",
+          "blurb":"Yanzihe is a locality in Hubei. Yanzihe is situated northwest of Dongwan, and east of Shikanshang.",
+          "link":"https://ceb.wikipedia.org/wiki/Yanzihe"
+       },
+       {
+          "place":"Kuvshinovo",
+          "blurb":"The main industry branch in Kuvshinovo is paper production.",
+          "link":"https://en.wikipedia.org/wiki/Kuvshinovo,_Kuvshinovsky_District,_Tver_Oblast"
+       },
+       {
+          "place":"Sembalunbumbung",
+          "blurb":"Sembalunbumbung is a village in Indonesia and has an elevation of 1,191 metres. Sembalunbumbung is situated southeast of Sembalunlawang, and north of Pusuk.",
+          "link":"https://mapcarta.com/15601426"
+       },
+       {
+          "place":"Bang Rakam",
+          "blurb":"The district was established on 10 December 1905, then named Chum Saeng District. Khun Phadet Prachadun was the first district head officer.",
+          "link":"https://en.wikipedia.org/wiki/Bang_Rakam_district"
+       }
+    ]
+ }
+ 
