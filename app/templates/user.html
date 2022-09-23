@@ -4,139 +4,160 @@
 
 <h1 class="twelve">{{name}}</h1>
 <p>{{intro}}</p>
+
 {% endblock %} {% block education %}
 <div class="main_title">Education</div>
-{% for k,v in edu.items() %}
-<li>{{k}}:{{v}}</li>
-{% endfor %} {% endblock %} {% block work %}
+<!-- <h1 style="text-align: center">Education</h1> -->
+<br> {% for k,v in edu.items() %}
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <div class="p">{{k}}</div>
+        </div>
+        <div class="flip-card-back">
+            <div class="p">{{v}}</div>
+        </div>
+    </div>
+</div>
+<br> {% endfor %} {% endblock %} {% block work %}
 <div class="main_title">Work</div>
+<!-- <h1 style="text-align: center">Work</h1> -->
 {% for k,v in work.items() %}
-<li>{{k}}:{{v}}</li>
+<div class="column2">
+    <button type="button" class="collapsible" style="width:700px; border-color:black; border-radius:10px">{{k}}</button>
+    <div class="content">
+        <p>{{v}}</p>
+    </div>
+</div>
+
 {% endfor %} {% endblock %} {% block hobbies %}
 <div class="main_title">Hobbies</div>
 <div class="container mt-4">
-  <div class="row g-3">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img src="{{hobby_0.image}}" class="card-img-top" />
-        <div class="card-body">
-          <h5 class="card-title">{{hobby_0.hobby}}</h5>
-          <p class="card-text">{{hobby_0.blurb}}</p>
+    <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="{{hobby_0.image}}" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">{{hobby_0.hobby}}</h5>
+                    <p class="card-text">{{hobby_0.blurb}}</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img src="{{hobby_1.image}}" class="card-img-top" />
-        <div class="card-body">
-          <h5 class="card-title">{{hobby_1.hobby}}</h5>
-          <p class="card-text">{{hobby_1.blurb}}</p>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="{{hobby_1.image}}" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">{{hobby_1.hobby}}</h5>
+                    <p class="card-text">{{hobby_1.blurb}}</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img src="{{hobby_2.image}}" class="card-img-top" />
-        <div class="card-body">
-          <h5 class="card-title">{{hobby_2.hobby}}</h5>
-          <p class="card-text">{{hobby_2.blurb}}</p>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="{{hobby_2.image}}" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">{{hobby_2.hobby}}</h5>
+                    <p class="card-text">{{hobby_2.blurb}}</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  {% endblock %} {% block places %}
-  <div class="places-wrapper wrapper">
-    <div class="main_title">Places of Interest</div>
+    {% endblock %} {% block places %}
+    <div class="places-wrapper wrapper">
+        <div class="main_title">Places of Interest</div>
 
-    <div class="accordion_wrap">
-      <ul>
-        <li class="place_0 active">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu active">
-            <div class="inner_am">
-              <div class="title">{{place_0.place}}</div>
-              <div class="content">{{place_0.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_0.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="place_1">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu">
-            <div class="inner_am">
-              <div class="title">{{place_1.place}}</div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.9855510753!2d-122.50764015508241!3d37.75781499654329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1663944192537!5m2!1sen!2smx"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
-              <div class="content">{{place_1.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_1.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="place_2">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu">
-            <div class="inner_am">
-              <div class="title">{{place_2.place}}</div>
-              <div class="content">{{place_2.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_2.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="place_3">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu">
-            <div class="inner_am">
-              <div class="title">{{place_3.place}}</div>
-              <div class="content">{{place_3.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_3.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="place_4">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu">
-            <div class="inner_am">
-              <div class="title">{{place_4.place}}</div>
-              <div class="content">{{place_4.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_4.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="place_5">
-          <div class="accordion_item">
-            <div class="icon"></div>
-          </div>
-          <div class="accordion_menu">
-            <div class="inner_am">
-              <div class="title">{{place_5.place}}</div>
-              <div class="content">{{place_5.blurb}}</div>
-              <div class="view_more">
-                <a href="{{place_5.link}}">View More</a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <div class="accordion_wrap">
+            <ul>
+                <li class="place_0 active">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu active">
+                        <div class="inner_am">
+                            <div class="title">{{place_0.place}}</div>
+                            <div class="content">{{place_0.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_0.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="place_1">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu">
+                        <div class="inner_am">
+                            <div class="title">{{place_1.place}}</div>
+
+                            <div class="content">{{place_1.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_1.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="place_2">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu">
+                        <div class="inner_am">
+                            <div class="title">{{place_2.place}}</div>
+                            <div class="content">{{place_2.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_2.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="place_3">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu">
+                        <div class="inner_am">
+                            <div class="title">{{place_3.place}}</div>
+                            <div class="content">{{place_3.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_3.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="place_4">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu">
+                        <div class="inner_am">
+                            <div class="title">{{place_4.place}}</div>
+                            <div class="content">{{place_4.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_4.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="place_5">
+                    <div class="accordion_item">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_menu">
+                        <div class="inner_am">
+                            <div class="title">{{place_5.place}}</div>
+                            <div class="content">{{place_5.blurb}}</div>
+                            <div class="view_more">
+                                <a href="{{place_5.link}}">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-  {% endblock %}
+    {% endblock %}
 </div>

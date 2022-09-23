@@ -132,227 +132,315 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
-}
 
 /* Accordion */
 
-.places-wrapper{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	font-family: 'Montserrat', sans-serif;
+.places-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper{
-	width: 850px;
-	margin: 200px auto;
+.wrapper {
+    width: 850px;
+    margin: 200px auto;
 }
 
-.main_title{
+.main_title {
     border-radius: 25px;
-	font-size: 32px;
-	color: #fff;
-	letter-spacing: 2px;
-	background: #edc856;
-	padding: 15px 25px; 
-	text-align: center;
-	width: 700px;
-	margin: 0 auto 25px;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 2px;
+    background: #edc856;
+    padding: 15px 25px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto 25px;
 }
 
-.accordion_wrap ul{
-	display: flex;
-	justify-content: center;
+.accordion_wrap ul {
+    display: flex;
+    justify-content: center;
 }
 
-.accordion_wrap .accordion_item{
-	list-style: none;
-	width: 100px;
-	height: 250px;
-	background: #edc856;
-	border-right: 1px solid #a48d2d;
-	cursor: pointer;
-	position: relative;
-	transition: all 0.2s linear;
+.accordion_wrap .accordion_item {
+    list-style: none;
+    width: 100px;
+    height: 250px;
+    background: #edc856;
+    border-right: 1px solid #a48d2d;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s linear;
 }
 
 .accordion_wrap .accordion_item:hover,
-.accordion_wrap li.active .accordion_item{
-	background: #a48d2d;
-	border-right: 1px solid #edc856;
+.accordion_wrap li.active .accordion_item {
+    background: #a48d2d;
+    border-right: 1px solid #edc856;
 }
 
-.accordion_wrap li:first-child .accordion_item{
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+.accordion_wrap li:first-child .accordion_item {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .accordion_wrap li:last-child .accordion_item,
-.accordion_wrap li:last-child .accordion_menu{
-	border-right: 0px;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
+.accordion_wrap li:last-child .accordion_menu {
+    border-right: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.accordion_wrap ul li{
-	display: flex;
+.accordion_wrap ul li {
+    display: flex;
 }
 
-.accordion_menu{
-	width: 0px;
-	height: 250px;
-	background: #fffaeb;
-	color: #a48d2d;
-	overflow: hidden;
-	transition: width 0.2s ease;
+.accordion_menu {
+    width: 0px;
+    height: 250px;
+    background: #fffaeb;
+    color: #a48d2d;
+    overflow: hidden;
+    transition: width 0.2s ease;
 }
 
-.accordion_wrap ul li.active .accordion_menu{
-	width: 250px;
+.accordion_wrap ul li.active .accordion_menu {
+    width: 250px;
 }
 
-.accordion_menu .inner_am{
-	padding: 15px;
+.accordion_menu .inner_am {
+    padding: 15px;
 }
 
-.accordion_menu .title{
-	font-weight: 600;
+.accordion_menu .title {
+    font-weight: 600;
 }
 
-.accordion_menu .content{
-	font-size: 13px;
-	font-weight: 300;
-	margin: 10px 0;
+.accordion_menu .content {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 10px 0;
 }
 
-.accordion_menu .view_more{
-	padding: 5px;
-	background: #a48d2d;
-	color: #fffaeb;
-	width: 125px;
-	text-align: center;
-	border-radius: 3px;
-	cursor: pointer;
-	font-size: 13px;
+.accordion_menu .view_more {
+    padding: 5px;
+    background: #a48d2d;
+    color: #fffaeb;
+    width: 125px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 .accordion_menu a {
-	padding: 5px;
-	color: #fffaeb;
-	width: 125px;
-	text-align: center;
-	border-radius: 3px;
-	cursor: pointer;
-	font-size: 13px;
+    padding: 5px;
+    color: #fffaeb;
+    width: 125px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
 }
 
-.accordion_menu .view_more:hover{
-	text-decoration: underline;
+.accordion_menu .view_more:hover {
+    text-decoration: underline;
 }
+
 
 /* Accordion Iconography  */
 
-.accordion_wrap ul li .icon{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: url('../img/icons.png') no-repeat;
+.accordion_wrap ul li .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../img/icons.png') no-repeat;
 }
 
-.accordion_wrap ul li.place_0 .icon{
-	background-position: 0 0;
-	width: 43px;
-	height: 43px;
+.accordion_wrap ul li.place_0 .icon {
+    background-position: 0 0;
+    width: 43px;
+    height: 43px;
 }
 
-.accordion_wrap ul li.place_1 .icon{
-	background-position: 0 -56px;
-	width: 43px;
-	height: 28px;
+.accordion_wrap ul li.place_1 .icon {
+    background-position: 0 -56px;
+    width: 43px;
+    height: 28px;
 }
 
-.accordion_wrap ul li.place_2 .icon{
-	background-position: 0 -96px;
-	width: 43px;
-	height: 32px;
+.accordion_wrap ul li.place_2 .icon {
+    background-position: 0 -96px;
+    width: 43px;
+    height: 32px;
 }
 
-.accordion_wrap ul li.place_3 .icon{
-	background-position: 0 -141px;
-	width: 43px;
-	height: 24px;
+.accordion_wrap ul li.place_3 .icon {
+    background-position: 0 -141px;
+    width: 43px;
+    height: 24px;
 }
 
-.accordion_wrap ul li.place_4 .icon{
-	background-position: 0 -178px;
-	width: 43px;
-	height: 33px;
+.accordion_wrap ul li.place_4 .icon {
+    background-position: 0 -178px;
+    width: 43px;
+    height: 33px;
 }
 
-.accordion_wrap ul li.place_5 .icon{
-	background-position: 0 -224px;
-	width: 43px;
-	height: 43px;
+.accordion_wrap ul li.place_5 .icon {
+    background-position: 0 -224px;
+    width: 43px;
+    height: 43px;
 }
 
 .accordion_wrap ul li.place_0 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_0.active .icon{
-	background-position: -57px 0;
+.accordion_wrap ul li.place_0.active .icon {
+    background-position: -57px 0;
 }
 
 .accordion_wrap ul li.place_1 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_1.active .icon{
-	background-position: -57px -56px;
+.accordion_wrap ul li.place_1.active .icon {
+    background-position: -57px -56px;
 }
 
 .accordion_wrap ul li.place_2 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_2.active .icon{
-	background-position: -57px -96px;
+.accordion_wrap ul li.place_2.active .icon {
+    background-position: -57px -96px;
 }
 
 .accordion_wrap ul li.place_3 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_3.active .icon{
-	background-position: -57px -141px;
+.accordion_wrap ul li.place_3.active .icon {
+    background-position: -57px -141px;
 }
 
 .accordion_wrap ul li.place_4 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_4.active .icon{
-	background-position: -57px -178px;
+.accordion_wrap ul li.place_4.active .icon {
+    background-position: -57px -178px;
 }
 
 .accordion_wrap ul li.place_5 .accordion_item:hover .icon,
-.accordion_wrap ul li.place_5.active .icon{
-	background-position: -57px -224px;
+.accordion_wrap ul li.place_5.active .icon {
+    background-position: -57px -224px;
 }
+
 
 /* Style Header */
 
 .twelve h1 {
-    font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
-  }
-  .twelve h1:before {
-      background-color: #c50000;
-      content: '';
-      display: block;
-      height: 3px;
-      width: 75px;
-      margin-bottom: 5px;
-  }
-  .twelve h1:after {
-      background-color: #c50000;
-      content: '';
-      display: block;
-    position:absolute; right:0; bottom:0;
-      height: 3px;
-      width: 75px;
-      margin-bottom: 0.25em;
-  }
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 160px;
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+    padding-bottom: 13px;
+}
+
+.twelve h1:before {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+}
+
+.twelve h1:after {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 0.25em;
+}
+
+
+/* collapsible */
+
+
+/* .column2 {
+    width: 700px;
+} */
+
+.collapsible {
+    /* background-image: url("app/static/img/long-box.png");
+    background-size: 100%; */
+    height: 50px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: black;
+    margin: 10px;
+    /* width: 700px; */
+    padding: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: middle;
+    outline: none;
+}
+
+.content {
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    text-align: middle;
+}
+
+
+/* flip card */
+
+.cards {
+    display: flex;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 700px;
+    height: 50px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-style: solid;
+    padding: 10px;
+}
+
+.flip-card-front {
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    color: black;
+    transform: rotateY(180deg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
