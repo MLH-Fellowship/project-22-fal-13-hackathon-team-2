@@ -125,6 +125,19 @@ body {
     flex-direction: column;
 }
 
+.map {
+    overflow-x: hidden;
+    position: relative;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient( #b8cfec, #7fa0c9);
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
 .box {
     position: absolute;
     top: 50%;
@@ -388,7 +401,7 @@ body {
     outline: none;
 }
 
-.content {
+.content_work {
     padding: 15px;
     display: none;
     overflow: hidden;
