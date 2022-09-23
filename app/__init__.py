@@ -16,7 +16,7 @@ hobbies = json.load(open(json_url))
 
 @app.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html')
+    return render_template('hobbies.html', title="MLH Fellow", url=os.getenv("URL"), users=users)
 
 @app.route('/places')
 def get_places():
@@ -94,6 +94,10 @@ users = [
         "place":"Porto Novo",
         "blurb":"Porto-Novo was once a tributary of the Yoruba kingdom of Oyo, which had offered it protection from the neighbouring Fon, who were expanding their influence and power in the region.",
         "link":"https://en.wikipedia.org/wiki/Porto-Novo"
+    },
+    "map":{
+        "location":"Thaba-Tseka",
+        "address":"https://www.google.com/maps/embed?pb=!4v1663954870490!6m8!1m7!1srxPf3cxrHGZzWogKDLrXoQ!2m2!1d-29.53141695448499!2d28.23740622745882!3f2.09!4f-13.799999999999997!5f0.8160813932612223"
     }
     },
     {'pic': '/static/img/jo_avatar.png',
@@ -153,6 +157,10 @@ users = [
         "place":"Howrah",
         "blurb":"The history of the city of Howrah dates back over 500 years, but the district is situated in an area historically occupied by the ancient Bengali kingdom of Bhurshut.",
         "link":"https://en.wikipedia.org/wiki/Howrah"
+    },
+    "map":{
+        "location":"Vlore County",
+        "address":"https://www.google.com/maps/embed?pb=!4v1663954980520!6m8!1m7!1ssCtmt5vB9xQGIK5oTkz5Wg!2m2!1d40.14050738524855!2d19.64203503900379!3f272.09!4f5!5f0.8160813932612223"
     }
     },
     {'pic': '/static/img/jane_avatar.png',
@@ -212,9 +220,10 @@ users = [
         "place":"Bang Rakam",
         "blurb":"The district was established on 10 December 1905, then named Chum Saeng District. Khun Phadet Prachadun was the first district head officer.",
         "link":"https://en.wikipedia.org/wiki/Bang_Rakam_district"
+    },
+    "map":{
+        "location":"Si Kaeo",
+        "address":"https://www.google.com/maps/embed?pb=!4v1663955065652!6m8!1m7!1sQ_ur_9Tm3-NgZx21UrA-tg!2m2!1d16.20508301633371!2d104.3767273992051!3f282.90249597244343!4f2.9684585023826173!5f0.4000000000000002"
     }
     }
-    
-    
-    
 ]
