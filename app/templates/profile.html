@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Personal Portfolio" />
+    <meta property="og:description" content="My Personal Portfolio" />
+    <meta property="og:url" content="{{ url }}" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link lang='sass' rel="stylesheet" href="/static/styles/main.css">
-    <link rel='icon' href='/static/img/favicon.ico' type='image/x-icon' />
+    <link lang="sass" rel="stylesheet" href="/static/styles/main.css" />
+    <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
-</head>
+  </head>
 
-<body>
-    <!-- <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-            <a href="/hobbies">
-                <p>hobbies</p>
-            </a>
-        </div>
-    </header> -->
-
-
+  <body>
     <!-- Used Bootstrap instead -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
-        <a href="/">
-            <div class="nav-logo">
-                <img src="/static/img/logo_chicken_reverse.png" />
-            </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <!-- <li class="nav-item active">
+      <a href="/">
+        <div class="nav-logo">
+          <img src="/static/img/logo_chicken.png" />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#work">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#places">Places</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/hobbies"> Our Hobbies</a>
-                </li>
-            </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#places">Places</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-
-    <section class="about">
-        <div class="box text-center">
-            {% block about %}{% endblock %}
-        </div>
+    <section class="about" id="about">
+      <div class="box text-center">{% block about %}{% endblock %}</div>
     </section>
 
     <section class="education" id="education">
-        <div class="box">
-            <h1>Education</h1>
-            {% block education %}{% endblock %}
-        </div>
+      <div class="box">{% block education %}{% endblock %}</div>
     </section>
 
     <section class="work" id="work">
-        <div class="box">
-            <h1>Work</h1>
-            {% block work %}{% endblock %}
-        </div>
+      <div class="box">{% block work %}{% endblock %}</div>
     </section>
 
-    <!-- 
-    <div class="profile">
-        <h1>Hobbies</h1>
-        {% block hobbies %}{% endblock %}
-    </div> -->
+    <section class="hobbies" id="hobbies">
+      <div class="box">{% block hobbies %}{% endblock %}</div>
+    </section>
 
     <section class="places" id="places">
-        <div class="box">
-            <h1>Places</h1>
-            {% block places %}{% endblock %}
-        </div>
+      <div class="box">{% block places %} {% endblock %}</div>
     </section>
 
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/index.js') }}"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,53 @@
+{
+    "serena_hobbies":[
+       {
+          "hobby":"Physics",
+          "image":"img/hobby_physics.jpg",
+          "blurb":"Physicists look at how and why things move and behave in space and time, along with the concepts of energy and force that go along with it. "
+       },
+       {
+          "hobby":"Insect Collecting",
+          "image":"img/hobby_insect_collecting.jpg",
+          "blurb":"The term 'insect collecting' refers to the practice of acquiring insects and other arthropods for scientific research or personal enjoyment. "
+       },
+       {
+          "hobby":"Fingerprint Collecting",
+          "image":"img/hobby_fingerprint_collecting.jpg",
+          "blurb":"When the skin of your finger rubs together, it leaves an imprint known as a fingerprint. "
+       }
+    ],
+    "jane_hobbies":[
+       {
+          "hobby":"Embroidery",
+          "image":"img/hobby_embroidery.jpg",
+          "blurb":"Embroidery is the art of applying thread or yarn to a cloth or other substance using a needle. "
+       },
+       {
+          "hobby":"Stone Collecting",
+          "image":"img/hobby_stone_collecting.jpg",
+          "blurb":"Amateur geology is the study and hobby of collecting rocks and minerals or fossils from the natural environment. "
+       },
+       {
+          "hobby":"Beer Tasting",
+          "image":"img/hobby_beer_tasting.jpg",
+          "blurb":"Tasting beers is a great opportunity to learn about the history of beer as well as its many components, like malt and yeast."
+       }
+    ],
+    "jo_hobbies":[
+       {
+          "hobby":"Travel",
+          "image":"img/hobby_travel.jpg",
+          "blurb":"Travel is the act of moving from one place to another, usually across long distances. "
+       },
+       {
+          "hobby":"Ballet Dancing",
+          "image":"img/hobby_ballet.jpg",
+          "blurb":"A sort of performance dance, ballet has its origins in the Italian Renaissance and subsequently evolved into a concert dance in France and Russia around the fourteenth century."
+       },
+       {
+          "hobby":"Dowsing",
+          "image":"img/hobby_dowsing.jpg",
+          "blurb":"In order to identify underground water, buried metals or ores, precious stones, oil, so-called radioactive elements, cemetery sites, and harmful 'earth vibrations' without the aid of a scientific device, people have used a kind of divination known as dowsing. "
+       }
+    ]
+ }

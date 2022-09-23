@@ -1,0 +1,47 @@
+[
+    {
+        "pic": "/static/img/serena_avatar.png",
+        "name": "Serenity",
+        "Intro": "Tv fan. General social media scholar. Music fanatic. Food advocate. Zombie practitioner. Passionate travel specialist.",
+        "edu": {
+            "Bachelors in A": 2028,
+            "Masters in B": 2033, 
+            "PhD in C": 2045
+        },
+        "work": {
+            "company A": 2018,
+            "company B": 2023,
+            "company C": 2024
+        }
+    },
+    {
+        "pic": "/static/img/jo_avatar.png",
+        "name": "jo",
+        "intro": "Internet buff. Incurable gamer. Subtly charming troublemaker. Web specialist. Evil problem solver. Friendly thinker.",
+        "edu": {
+            "Bachelors in A": 2018,
+            "Masters in B": 2023, 
+            "PhD in C": 2040
+        },
+        "work": {
+            "company A": 2018,
+            "company B": 2023,
+            "company C": 2024
+        }
+    },
+    {
+        "pic": "/static/img/jane_avatar.png",
+        "name": "jane",
+        "intro": "Hardcore internet fanatic. Travel maven. Extreme zombie expert. Coffee evangelist. Musicaholic. Devoted creator. Gamer. Organizer.",
+        "edu": {
+            "Bachelors in A": 2018,
+            "Masters in B": 2023, 
+            "PhD in C": 2040
+        },
+        "work": {
+            "company A": 2018,
+            "company B": 2023,
+            "company C": 2024
+        }
+    }
+]

@@ -1,19 +1,115 @@
 {% extends 'profile.html' %} {% block about %}
 
+<img src="{{ pic }}" class="picture" style="max-width: 200px !important" />
 
-<img src="{{ pic }}" class="picture" style="max-width: 200px !important;">
-
-<h1>{{name}}</h1>
+<h1 class="twelve">{{name}}</h1>
 <p>{{intro}}</p>
-{% endblock %} {% block education %} {% for k,v in edu.items() %}
+{% endblock %} {% block education %}
+<div class="main_title">Education</div>
+{% for k,v in edu.items() %}
 <li>{{k}}:{{v}}</li>
-{% endfor %} {% endblock %} {% block work %} {% for k,v in work.items() %}
+{% endfor %} {% endblock %} {% block work %}
+<div class="main_title">Work</div>
+{% for k,v in work.items() %}
 <li>{{k}}:{{v}}</li>
-{% endfor %} {% endblock %}
-<!-- {% block hobbies %} {% for i in hobbies %}
+{% endfor %} {% endblock %} {% block hobbies %}
+<div class="main_title">Hobbies</div>
+<!-- {% for i in hobbies %}
 <li>{{i}}</li>
-{% endfor %} {% endblock %}  -->
-{% block places %}
-<h3>insert_user_map</h3> {% endblock %}
+{% endfor %}  -->
 
-<!-- Add a template for adding multiple work experiences/education/hobbies using Jinja -->
+{% endblock %} {% block places %}
+<div class="places-wrapper wrapper">
+  <div class="main_title">Places of Interest</div>
+
+  <div class="accordion_wrap">
+    <ul>
+      <li class="place_0 active">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu active">
+          <div class="inner_am">
+            <div class="title">{{place_0.place}}</div>
+            <div class="content">{{place_0.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_0.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="place_1">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu">
+          <div class="inner_am">
+            <div class="title">{{place_1.place}}</div>
+
+            <div class="content">{{place_1.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_1.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="place_2">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu">
+          <div class="inner_am">
+            <div class="title">{{place_2.place}}</div>
+            <div class="content">{{place_2.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_2.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="place_3">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu">
+          <div class="inner_am">
+            <div class="title">{{place_3.place}}</div>
+            <div class="content">{{place_3.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_3.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="place_4">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu">
+          <div class="inner_am">
+            <div class="title">{{place_4.place}}</div>
+            <div class="content">{{place_4.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_4.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="place_5">
+        <div class="accordion_item">
+          <div class="icon"></div>
+        </div>
+        <div class="accordion_menu">
+          <div class="inner_am">
+            <div class="title">{{place_5.place}}</div>
+            <div class="content">{{place_5.blurb}}</div>
+            <div class="view_more">
+              <a href="{{place_5.link}}">View More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
