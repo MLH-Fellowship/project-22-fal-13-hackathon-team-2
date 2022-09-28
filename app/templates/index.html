@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--For page with list of profile pics and chicken on top-->
 
 <head>
     <!-- Required meta tags -->
@@ -25,11 +26,11 @@
             <div class="img">
                 <a href="/user/{{loop.index0}}/">
                     <div id="profile-picture" class="profile-picture">
-                        <img src="{{ user.pic }}" />
+                        <img src="{{ user.pic }}" alt />
                     </div>
                 </a>
             </div>
-            <p>{{user.name}}</p>
+            <p font-size="30px">{{user.name}}</p>
             {% endfor %}
             <h3 style="color: black">Clicky, clicky!</h3>
         </div>

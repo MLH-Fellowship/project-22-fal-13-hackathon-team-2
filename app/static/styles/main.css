@@ -19,16 +19,33 @@ body {
     height: 100%;
 }
 
-.profile {
+.about {
+    margin-bottom: 40px;
+    overflow-x: hidden;
+    position: relative;
     background-image: linear-gradient(#b8cfec, #f8e8ed);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+#vid{
+    position: fixed;   
+    right:0;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.profile {
+    /*background-image: linear-gradient(#b8cfec, #f8e8ed);
     /* background-color: #1d539f !important; */
     text-align: center;
     height: 320px;
     height: 100vh;
-    /* margin-bottom: 50px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
 }
 
 .profile h1 {
@@ -44,7 +61,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* display: flex; */
-    padding: 0px;
+    padding: 30px;
 }
 
 .picture {
@@ -59,31 +76,20 @@ body {
 
 .profile .profile-picture {
     /* margin-bottom: 30px; */
-    height: 100px;
+    height: 250px;
 }
 
-.about {
-    overflow-x: hidden;
-    position: relative;
-    background-image: linear-gradient(#b8cfec, #f8e8ed);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-direction: column;
-}
 
 .education {
-    overflow-x: hidden;
+    overflow-x: scroll;
     position: relative;
     background-image: linear-gradient( #f8e8ed, #f8e8ed);
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .work {
@@ -166,7 +172,7 @@ body {
     font-size: 32px;
     color: #fff;
     letter-spacing: 2px;
-    background: #edc856;
+    background: gray;
     padding: 15px 25px;
     text-align: center;
     width: 700px;
@@ -456,4 +462,12 @@ body {
     background-size: 50px;
     background-repeat: no-repeat;
     border-radius: 10px;
+}
+
+
+
+
+/*Hobbies Page*/
+.square{
+    display:flex;
 }
