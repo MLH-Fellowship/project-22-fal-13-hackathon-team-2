@@ -73,7 +73,11 @@
     </nav>
 
     <section class="about" id="about">
-      <div class="box text-center">{% block about %}{% endblock %}</div>
+      <video autoplay muted loop id="vid">
+          <source src='/static/Flower.mp4' type="video/mp4">
+      </video>
+      <div class="box text-center">{% block about %}{% endblock %}
+      </div>
     </section>
 
     <section class="education" id="education">

@@ -8,37 +8,46 @@
 {% endblock %} {% block education %}
 <div class="main_title">Education</div>
 <!-- <h1 style="text-align: center">Education</h1> -->
-<br />
+<br/>
 {% for k,v in edu.items() %}
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <div class="p">{{k}}</div>
-    </div>
-    <div class="flip-card-back">
-      <div class="p">{{v}}</div>
+      </div>
+      <div class="flip-card-back">
+        <div class="p">{{v}}</div>
     </div>
   </div>
 </div>
+{% endfor %}
 <br />
-{% endfor %} {% endblock %} {% block work %}
+{% endblock %} 
+
+{% block work %}
 <div class="main_title">Work</div>
 <!-- <h1 style="text-align: center">Work</h1> -->
-{% for k,v in work.items() %}
-<div class="column2">
-  <button
-    type="button"
-    class="collapsible"
-    style="width: 700px; border-color: black; border-radius: 10px"
-  >
-    {{k}}
-  </button>
-  <div class="content_work">
-    <p>{{v}}</p>
+<div class="timeline">
+  {% for k,v in work.items() %}
+  <div class="timeline-container left">
+    <div class="content">
+        <h2>{{k}}</h2>
+          <p>{{v}}</p>
+      <!--div class="column2">
+        <button
+        type="button"
+        class="collapsible"
+        style="width: 700px; border-color: black; border-radius: 10px"
+        >
+    </button>
+    <div class="content_work"-->
+    </div>
   </div>
-</div>
+{% endfor %}
+</div> 
 
-{% endfor %} {% endblock %} {% block hobbies %}
+{% endblock %}
+{% block hobbies %}
 <div class="main_title">Hobbies</div>
 <div class="container mt-4">
   <div class="row g-3">
@@ -168,8 +177,13 @@
     </div>
   </div>
   {% endblock %} {% block map %}
-  <div class="main_title">Interesting Map</div>
-        <iframe src="{{map.address}}" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="map">Where do You want to Go?</div>
+        <img src = "https://maps.googleapis.com/maps/api/staticmap?center=Albany%2C+NY&zoom=0&scale=2&size=600x300&maptype=roadmap&format=png&key=YOUR-API-KEY-HERE"
+        &markers=color:blue%7Clabel:S%7C40.702147,-74.015794
+        &markers=color:green%7Clabel:G%7C40.711614,-74.012318
+        &markers=color:red%7Clabel:C%7C40.718217,-73.998284
+        alt="" >
+        <!--iframe src="{{map.address}}" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
   </div>
   {% endblock %}
 </div>

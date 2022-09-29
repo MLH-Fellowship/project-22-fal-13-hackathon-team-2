@@ -1,6 +1,8 @@
 import os, json 
 from flask import Flask, render_template, request, url_for, jsonify
 from dotenv import load_dotenv
+from flask_googlemaps import GoogleMaps
+#GoogleMaps(app, key="8JZ7i18MjFuM35dJHq70n3Hx4")
 
 load_dotenv()
 app = Flask(__name__)
@@ -13,11 +15,11 @@ places = json.load(open(json_url))
 # Hobbies JSON
 json_url = os.path.join(SITE_ROOT, "data", "hobbies.json")
 hobbies = json.load(open(json_url))
-
+"""
 @app.route('/hobbies')
 def hobbies():
     return render_template('hobbies.html', title="MLH Fellow", url=os.getenv("URL"), users=users)
-
+"""
 @app.route('/places')
 def get_places():
     global places   
@@ -101,3 +103,4 @@ users = [
     }
     }
 ]
+

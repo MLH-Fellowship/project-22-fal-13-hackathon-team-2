@@ -28,7 +28,27 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+
 var sizeFooter = function(){
     $(".webfooter").css("padding-bottom", "0px").css("padding-bottom", $(window).height() - $("body").height())
 }
 $(window).resize(sizeFooter);
+// Initialize and add the map
+
+
+/*function initMap() {
+    // The location of Trips
+    const Trips = {{ map.address }};
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 1,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }*/
+  
