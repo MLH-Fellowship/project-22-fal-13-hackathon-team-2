@@ -39,33 +39,33 @@ def user(id):
 
 
 users = [
-    {'pic': '/static/img/serena_avatar.png',
+    {'pic': '/static/img/Serena.jpg',
     'name': "Serenity",
-    'intro': "Tv fan. General social media scholar. Music fanatic. Food advocate. Zombie practitioner. Passionate travel specialist.",
-    'edu': {
-        "Bachelors in A": 2028,
-        "Masters in B": 2033, 
-        "PhD in C": 2045
+    'intro': " Hi, my name is Serenity and I am glad that you have come to read my portfolio. I am a self taught programmer with mainly experience using python and Java. I transitioned from a career in accounting because at the time I felt like it really wasn't the fit for me. Currently I am just riding the waves of life and would love to see where it takes me",
+    'edu':{
+        "2019": "Bachelors in Accountning",
+        "2023": "Masters in Computer Science"
     },
     'work': {
-        "company A": 2018,
-        "company B": 2023,
-        "company C": 2024
+        "Cohn Reznick": "If you have ever recieved rent relief in that good old state of conneticuit. That was good old me behind teh scenes calling the shots... And maybe 500 other peolpe. But my main goal was to audit fraudulent cases that were being mishandled or improperly filed or on a larger scale, landlords who wanted to evect tenants after recieving money.",
+        "All Temps": "Worked for HR.. and hired people who were in desperate need of a job ",
+        "Red Cross":  "Conducted research on under serviced communities 2 times a year and after certain disasters to see how things can improve and Participated in activities that assisted others in their time of need such as installing fire alarms, or providing rescue during Hurricanes."
     },
+
     "hobby_0":{
-        "hobby":"Physics",
-        "image":"/static/img/hobbies/hobby_physics.jpg",
-        "blurb":"Physicists look at how and why things move and behave in space and time, along with the concepts of energy and force that go along with it. "
+        "hobby":"Ice Skating",
+        "image":"/static/img/lemon.jpg",
+        "blurb":"If you've never made yourself feel like Elsa you're missing out. A pair of skates and a warm pretzel in the winter is an amazing feeling "
     },
     "hobby_1":{
-        "hobby":"Insect Collecting",
-        "image":"/static/img/hobbies/hobby_insect_collecting.jpg",
-        "blurb":"The term 'insect collecting' refers to the practice of acquiring insects and other arthropods for scientific research or personal enjoyment. "
+        "hobby":"Going Out",
+        "image":"/static/img/travel.gif",
+        "blurb":"Theres no way that I could stay cooped up in the house all day... for the most part. SO I do dare to go out into the night and explore the town every now and again. Even if I may miss the last bus."
     },
     "hobby_2":{
-        "hobby":"Fingerprint Collecting",
-        "image":"/static/img/hobbies/hobby_fingerprint_collecting.jpg",
-        "blurb":"When the skin of your finger rubs together, it leaves an imprint known as a fingerprint. "
+        "hobby":"Swimming",
+        "image":"/static/img/swim.png",
+        "blurb":"Although not an Olymian I am an absolute lover of swimming. When I can, I go to my local gym at leat twice a week and exercise or hang with my personal trainer."
     },
     "place_0":{
         "place":"Dusun Desa Sukadana",

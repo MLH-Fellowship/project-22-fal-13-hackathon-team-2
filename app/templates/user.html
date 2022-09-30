@@ -1,10 +1,10 @@
 {% extends 'profile.html' %} {% block about %}
 <!--Beginning of users About page-->
 <img src="{{ pic }}" class="picture" style="max-width: 300px !important" />
-
-<h1 class="twelve">{{name}}</h1>
-<p>{{intro}}</p>
-
+<div class = "Looks">
+  <h1 class="twelve">{{name}}</h1>
+    <p>{{intro}}</p>
+</div>
 {% endblock %} {% block education %}
 <div class="main_title">Education</div>
 <!-- <h1 style="text-align: center">Education</h1> -->
@@ -30,9 +30,13 @@
 <div class="timeline">
   {% for k,v in work.items() %}
   <div class="timeline-container left">
-    <div class="content">
+    <div class="tcontent">
         <h2>{{k}}</h2>
-          <p>{{v}}</p>
+        <p>{{v}}</p>
+    </div>
+  </div>
+{% endfor %}
+</div> 
       <!--div class="column2">
         <button
         type="button"
@@ -41,11 +45,6 @@
         >
     </button>
     <div class="content_work"-->
-    </div>
-  </div>
-{% endfor %}
-</div> 
-
 {% endblock %}
 {% block hobbies %}
 <div class="main_title">Hobbies</div>
@@ -177,11 +176,19 @@
     </div>
   </div>
   {% endblock %} {% block map %}
-  <div id="map">Where do You want to Go?</div>
-        <img src = "https://maps.googleapis.com/maps/api/staticmap?center=Albany%2C+NY&zoom=0&scale=2&size=600x300&maptype=roadmap&format=png&key=YOUR-API-KEY-HERE"
-        &markers=color:blue%7Clabel:S%7C40.702147,-74.015794
-        &markers=color:green%7Clabel:G%7C40.711614,-74.012318
-        &markers=color:red%7Clabel:C%7C40.718217,-73.998284
+  <div id="map"></div>
+        <h1 class="main_title">Lets'a Go!</h1>
+        <script>
+        function initMap() {
+          var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(44, -110),
+            mapTypeId: 'roadmap'
+          };
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      }
+      </script>
+        <img src = "https://maps.googleapis.com/maps/api/staticmap?zoom=0&scale=2&size=600x300&maptype=roadmap&format=png&markers=color:blue|label:A|Brooklyn,NY&markers=label:B|Brighton+Beach,NY&markers=color:Yellow|label:C|Seoul,SK&markers=label:D|London, UK&key=AIzaSyBIcptpufa72aMOJVan17Uf7b03fbI-1Ow"
         alt="" >
         <!--iframe src="{{map.address}}" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
   </div>
