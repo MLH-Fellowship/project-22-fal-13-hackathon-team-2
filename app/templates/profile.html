@@ -18,6 +18,9 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link lang="sass" rel="stylesheet" href="/static/styles/main.css" />
     <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon" />
     <!--Game Font Press Start 2P-->
@@ -71,11 +74,13 @@
       </div>
     </nav>
 
-    <section class="about" id="about">
+    <section class="about" id="about animated slideInUp">
       <video autoplay muted loop id="vid">
           <source src='/static/Mario.mp4' type="video/mp4">
       </video>
       <div class="box text-center">{% block about %}{% endblock %}
+            <a href="https://github.com/Safox1" class="fa fa-github fa-4x"> </a>
+            <a href="https://www.linkedin.com/in/serenity-f-b51886151/" class="fa fa-linkedin fa-4x"></a>
       </div>
     </section>
 

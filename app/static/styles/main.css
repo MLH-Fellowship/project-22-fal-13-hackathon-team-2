@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     position: relative;
     background-image: linear-gradient(#5795ff, #b8cfec);
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
@@ -52,6 +52,14 @@ nav{
     z-index: 0;
     object-fit: cover;
 }
+
+.fa-twitter{
+    color:black;
+}
+.fa-github{
+    color: black;
+}
+
 .Looks h1{
     font-size: 50px;
     font-weight: 700;
@@ -93,6 +101,9 @@ nav{
     padding: 30px;
 }
 
+.profile p{
+    font-family: "Press Start 2P";
+}
 .picture {
     border-radius: 50%;
     max-width: 100%;
