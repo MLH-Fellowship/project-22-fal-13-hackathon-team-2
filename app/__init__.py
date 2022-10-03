@@ -1,7 +1,6 @@
 import os, json 
 from flask import Flask, render_template, request, url_for, jsonify
 from dotenv import load_dotenv
-from flask_googlemaps import GoogleMaps
 #GoogleMaps(app, key="8JZ7i18MjFuM35dJHq70n3Hx4")
 
 load_dotenv()
