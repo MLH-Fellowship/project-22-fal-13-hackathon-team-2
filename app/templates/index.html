@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta property="og:title" content="Personal Portfolio" />
@@ -21,7 +20,7 @@
 <body>
     <div class="profile">
         <div class="box">
-            <img src="static/img/logo_chicken.png" alt="Know Your Chicken Logo" class="profile-img" /> {% for user in users %}
+            <!-- <img src="static/img/logo_chicken.png" alt="Know Your Chicken Logo" class="profile-img" /> {% for user in users %} -->
             <div class="img">
                 <a href="/user/{{loop.index0}}/">
                     <div id="profile-picture" class="profile-picture">
@@ -31,7 +30,7 @@
             </div>
             <p>{{user.name}}</p>
             {% endfor %}
-            <h3 style="color: black">Clicky, clicky!</h3>
+            <!-- <h3 style="color: black">Clicky, clicky!</h3> -->
         </div>
     </div>
 </body>
