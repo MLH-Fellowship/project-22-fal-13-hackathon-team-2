@@ -38,7 +38,7 @@ def user(id):
 
 users = [
     {'pic': '/static/img/jane_avatar.png',
-    'name': "Jane Chong",
+    'name': "Jane Chong TEST",
 
     'intro': ["CS masters student @ UPenn (Graduating Dec 2023)", 
     "Current Site Reliability Engineering Fellow @ MLH", 
