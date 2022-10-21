@@ -1,13 +1,28 @@
-<form action="{{ url_for('post_time_line_post') }}" method="post">
-    <label for="name">Name</label><br>
-    <input type="text" name="name"><br>
-    <label for="email">Email</label><br>
-    <input type="text" name="email"><br>
-    <label for="content">Content</label><br>
-    <input type="text" name="content">
-    <input type="submit">
-</form>
+<div class="draft">
+    <form action="{{ url_for('post_time_line_post') }}" method="post">
+        <label for="name">Name</label><br>
+        <input type="text" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email"><br>
+        <label for="content">Content</label><br>
+        <input type="text" name="content">
+        <input type="submit">
+    </form>
+</div>
 
-<form action="{{ url_for('get_time_line_post') }}" method="get">
-    <p>test</p>
-</form>
+
+{% for post in posts -%}
+<div class="card">
+    <h1>{{ post.name }}</h1>
+    <h1>{{ post.email }}</h1>
+    <p>{{ post.content}}</p>
+</div>
+{% endfor %}
+
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 50%;
+    }
+</style>
