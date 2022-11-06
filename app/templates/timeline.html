@@ -1,28 +1,68 @@
-<div class="draft">
-    <form action="{{ url_for('post_time_line_post') }}" method="post">
-        <label for="name">Name</label><br>
-        <input type="text" name="name"><br>
-        <label for="email">Email</label><br>
-        <input type="text" name="email"><br>
-        <label for="content">Content</label><br>
-        <input type="text" name="content">
-        <input type="submit">
-    </form>
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
+    <!-- <link lang="sass" rel="stylesheet" href="/static/styles/main.css" /> -->
+
+    <style>
+        body {
+            background-color: black;
+            align-items: center;
+            margin-top: 100px;
+        }
+        
+        h1,
+        p,
+        li,
+        h2,
+        a,
+        label {
+            color: #39e75f;
+            font-family: 'Patrick Hand', cursive;
+        }
+        
+        .box1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 50%;
+            line-height: 80%;
+        }
+        
+        hr.solid {
+            border-top: 3px solid #bbb;
+            background-color: #39e75f;
+        }
+    </style>
+</head>
+
+<div class="box1">
+    <div class="draft">
+        <form action="{{ url_for('post_time_line_post') }}" method="post">
+            <label for="name">Category</label>
+            <input type="text" name="name" style="background-color: black; color:#39e75f" autocomplete="off">
+            <label for="email">Date</label>
+            <input type="text" name="email" style="background-color: black; color:#39e75f" autocomplete="off">
+            <label for="content">Content</label>
+            <input type="text" name="content" style="background-color: black; color:#39e75f" autocomplete="off">
+            <input type="submit" style="background-color: black; color: #39e75f; border-radius: 2px">
+            <hr class="solid"> <br>
+        </form>
+    </div>
+
+
+
+
+    {% for post in posts -%}
+    <div class="card">
+        <p>{{ post.name }} [ {{ post.email }} ]: {{ post.content}}</p>
+    </div>
+    {% endfor %}
 </div>
-
-
-{% for post in posts -%}
-<div class="card">
-    <h1>{{ post.name }}</h1>
-    <h1>{{ post.email }}</h1>
-    <p>{{ post.content}}</p>
-</div>
-{% endfor %}
-
-
-<style>
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        width: 50%;
-    }
-</style>

@@ -35,6 +35,30 @@
             max-width: 550px;
             margin: 0 auto;
         }
+        
+        .box1 {
+            line-height: 20%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .blink {
+            animation: blink 1s steps(1, end) infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
     <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
@@ -42,13 +66,26 @@
 
 <body>
 
-    <div class="box">{% block about %}{% endblock %}</div>
+
+
+    <div class="box1">
+        <!-- <p>[root@jane-chong ~]# cd MLH_SRE_Portfolio</p> -->
+        <p>[root@jane-chong MLH_SRE_Portfolio]# ls</p>
+        <a href="x" style="text-decoration: none"> About</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="x" style="text-decoration: none"> Resume</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="/timeline" style="text-decoration: none"> Timeline</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="x" style="text-decoration: none"> Contact</a>
+        <p>[root@jane-chong MLH_SRE_Portfolio]# <span class="blink">[]</span></p>
+    </div>
+
+
+    <!-- <div class="box">{% block about %}{% endblock %}</div>
     <div class="box">{% block projects %}{% endblock %}</div>
     <div class="box">{% block education %}{% endblock %}</div>
     <div class="box">{% block work %}{% endblock %}</div>
     <div class="box">{% block resources %}{% endblock %}</div>
     <div class="box">{% block life %}{% endblock %}</div>
-    <div class="box">{% block contact %}{% endblock %}</div>
+    <div class="box">{% block contact %}{% endblock %}</div> -->
     <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
         <a href="/">
             <div class="nav-logo">

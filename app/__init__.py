@@ -33,11 +33,11 @@ mydb.create_tables([TimelinePost])
 
 
 
-# Places JSON
+
 json_url = os.path.join(SITE_ROOT, "data", "places.json")
 places = json.load(open(json_url))
 
-# Hobbies JSON
+
 json_url = os.path.join(SITE_ROOT, "data", "hobbies.json")
 hobbies = json.load(open(json_url))
 
