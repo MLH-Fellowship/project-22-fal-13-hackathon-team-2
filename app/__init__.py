@@ -99,7 +99,7 @@ def delete_time_line_post():
 
 users = [
     {'pic': '/static/img/jane_avatar.png',
-    'name': "Jane Chong TEST",
+    'name': "Jane Chong HIHI",
 
     'intro': ["CS masters student @ UPenn (Graduating Dec 2023)", 
     "Current Site Reliability Engineering Fellow @ MLH", 
