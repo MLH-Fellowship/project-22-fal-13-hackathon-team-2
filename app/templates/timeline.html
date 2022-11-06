@@ -35,11 +35,6 @@
             width: 50%;
             line-height: 80%;
         }
-        
-        hr.solid {
-            border-top: 3px solid #bbb;
-            background-color: #39e75f;
-        }
     </style>
 </head>
 
@@ -53,14 +48,15 @@
             <label for="content">Content</label>
             <input type="text" name="content" style="background-color: black; color:#39e75f" autocomplete="off">
             <input type="submit" style="background-color: black; color: #39e75f; border-radius: 2px">
-            <hr class="solid"> <br>
+            <!-- <hr class="solid"> <br> -->
+            <br><br>
         </form>
     </div>
 
 
 
 
-    {% for post in posts -%}
+    {% for post in posts[0:10] %}
     <div class="card">
         <p>{{ post.name }} [ {{ post.email }} ]: {{ post.content}}</p>
     </div>

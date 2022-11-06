@@ -90,6 +90,7 @@ def get_time_line_post():
             for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+    
 
 @app.route('/api/timeline_post/', methods=['DELETE'])
 def delete_time_line_post():
@@ -99,7 +100,7 @@ def delete_time_line_post():
 
 users = [
     {'pic': '/static/img/jane_avatar.png',
-    'name': "Jane Chong HIHI",
+    'name': "Jane Chong",
 
     'intro': ["CS masters student @ UPenn (Graduating Dec 2023)", 
     "Current Site Reliability Engineering Fellow @ MLH", 
