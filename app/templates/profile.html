@@ -26,7 +26,22 @@
         p,
         li,
         h2,
-        a {
+        a,
+        dd,
+        dt {
+            color: #39e75f;
+            font-family: 'Patrick Hand', cursive;
+        }
+        
+        button,
+        input[type="submit"],
+        input[type="reset"] {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
             color: #39e75f;
             font-family: 'Patrick Hand', cursive;
         }
@@ -42,6 +57,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        
+        .myAbout .myContact .myResume {
+            display: none !important;
+            color: #39e75f;
         }
         
         .blink {
@@ -71,11 +91,52 @@
     <div class="box1">
         <!-- <p>[root@jane-chong ~]# cd MLH_SRE_Portfolio</p> -->
         <p>[root@jane-chong MLH_SRE_Portfolio]# ls</p>
-        <a href="x" style="text-decoration: none"> About</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <a href="x" style="text-decoration: none"> Resume</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button onclick="myAbout()"> About</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button onclick="myResume()"> Resume</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="/timeline" style="text-decoration: none"> Timeline</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <a href="x" style="text-decoration: none"> Contact</a>
-        <p>[root@jane-chong MLH_SRE_Portfolio]# <span class="blink">[]</span></p>
+        <button onclick="myContact()"> Contact</button>
+        <br><br>
+        <!-- <p>[root@jane-chong MLH_SRE_Portfolio]# <span class="blink">[]</span></p> -->
+        <div id="myAbout">
+            <br>
+            <p>[root@jane-chong MLH_SRE_Portfolio]# cat About</p>
+            <p>Skills = [Python, Java, C, SQL, HTML/CSS, JS, Linux, iOS]</p>
+            <p>Current = [MCIT @ UPenn, SRE Fellow @ MLH]</p>
+            <p>Past = [Studied Econ in Australia, Ex-consultant @ Deloitte SEA]</p>
+            <p>Future = [Seeking Spring 2023 Internship in SRE]</p>
+        </div>
+
+        <div id="myResume">
+            <br>
+            <p>[root@jane-chong MLH_SRE_Portfolio]# cat Resume</p>
+            <p>Education: {</p>
+            <p>&nbsp&nbsp BEcon @ UQ: 2018, </p>
+            <p>&nbsp&nbsp MCIT @ UPenn: 2023</p>
+            <p>}</p>
+            <p>Experience: {</p>
+            <p>&nbsp&nbsp SRE Fellow @ MLH: 2022,</p>
+            <p>&nbsp&nbsp S&O Consultant @ Deloitte SEA: 2019-2021</p>
+            <p>}</p>
+            <p>Hacks: {</p>
+            <p>&nbsp&nbsp Pattrn: Intersystems Prize,</p>
+            <p>&nbsp&nbsp GreenFridge: Google & Twilio Prize,</p>
+            <p>&nbsp&nbsp VirtualCampus: People's Choice</p>
+            <p>}</p>
+            <p>Skills: {</p>
+            <p>&nbsp&nbsp Languages: Python, Java, C, SQL, HTML/CSS, JavaScript, Swift,</p>
+            <p>&nbsp&nbsp Tools: Flask, Jinja, React, Express, Google Cloud Platform, Linux, Git,</p>
+            <p>&nbsp&nbsp Courses: DS&A, DB, Systems, OOP, Discrete Math (TA)</p>
+            <p>}</p>
+        </div>
+
+        <div id="myContact">
+            <br>
+            <p>[root@jane-chong MLH_SRE_Portfolio]# cat Contact</p>
+            <a href="https://www.linkedin.com/in/jane96chong/" style="text-decoration: none"> Linkedin</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://github.com/Janecching" style="text-decoration: none"> Github</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://janecching.github.io/" style="text-decoration: none"> Website</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://docs.google.com/document/d/1t5U4Ju-gAhBj9SBNm4Wfsr65CnI22DJd_87rkqajlHE/edit" style="text-decoration: none"> Resume</a>
+        </div>
 
     </div>
 
@@ -124,7 +185,7 @@
                 </li>
             </ul>
         </div>
-    </nav> -->
+        </nav> -->
 
     <!-- <section class="about" id="about">
 
@@ -150,7 +211,38 @@
         <div class="box">{% block map %} {% endblock %}</div>
     </section> -->
 
-    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+    document.getElementById('welcomeDiv').style.display = "block";
+    <script>
+        document.getElementById("myAbout").hidden;
+
+        function myAbout() {
+            var x = document.getElementById("myAbout");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myResume() {
+            var x = document.getElementById("myResume");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myContact() {
+            var x = document.getElementById("myContact");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
