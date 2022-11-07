@@ -59,7 +59,7 @@
             transform: translate(-50%, -50%);
         }
         
-        .myAbout .myContact .myResume {
+        #myAbout #myContact #myResume {
             display: none !important;
             color: #39e75f;
         }
@@ -97,7 +97,7 @@
         <button onclick="myContact()"> Contact</button>
         <br><br>
         <!-- <p>[root@jane-chong MLH_SRE_Portfolio]# <span class="blink">[]</span></p> -->
-        <div id="myAbout">
+        <div id="myAbout" style="display: none">
             <br>
             <p>[root@jane-chong MLH_SRE_Portfolio]# cat About</p>
             <p>Skills = [Python, Java, C, SQL, HTML/CSS, JS, Linux, iOS]</p>
@@ -106,7 +106,7 @@
             <p>Future = [Seeking Spring 2023 Internship in SRE]</p>
         </div>
 
-        <div id="myResume">
+        <div id="myResume" style="display: none">
             <br>
             <p>[root@jane-chong MLH_SRE_Portfolio]# cat Resume</p>
             <p>Education: {</p>
@@ -129,7 +129,7 @@
             <p>}</p>
         </div>
 
-        <div id="myContact">
+        <div id="myContact" style="display: none">
             <br>
             <p>[root@jane-chong MLH_SRE_Portfolio]# cat Contact</p>
             <a href="https://www.linkedin.com/in/jane96chong/" style="text-decoration: none"> Linkedin</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -211,10 +211,8 @@
         <div class="box">{% block map %} {% endblock %}</div>
     </section> -->
 
-    document.getElementById('welcomeDiv').style.display = "block";
-    <script>
-        document.getElementById("myAbout").hidden;
 
+    <script>
         function myAbout() {
             var x = document.getElementById("myAbout");
             if (x.style.display === "none") {
