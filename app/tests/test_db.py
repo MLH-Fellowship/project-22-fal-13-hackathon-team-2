@@ -37,10 +37,7 @@ class TestTimelinePost(unittest.TestCase):
         assert second_post.id == 2
 
         #Get timeline posts and assert that they are correct by name
-        get_timeline_posts =[
-            model_to_dict(p)
-            for p in TimelinePost
-            ]
+        get_timeline_posts =[model_to_dict(p) for p in TimelinePost]
 
         assert get_timeline_posts[0]['name'] == 'John Doe'
         assert get_timeline_posts[1]['name'] == 'Jane Doe'
