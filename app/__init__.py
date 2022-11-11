@@ -5,10 +5,6 @@ from dotenv import load_dotenv
 from playhouse.shortcuts import model_to_dict
 #GoogleMaps(app, key="8JZ7i18MjFuM35dJHq70n3Hx4")
 
-
-
-
-
 load_dotenv()
 app = Flask(__name__)
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
@@ -19,6 +15,19 @@ mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
     port=3306
 )
 print(mydb)
+
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+    )
+
+
+
 #Timeline Post 
 class TimelinePost(Model):
     name = CharField()
