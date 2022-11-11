@@ -1,44 +1,52 @@
 {% extends 'profile.html' %} {% block about %}
-
-<img src="{{ pic }}" class="picture" style="max-width: 200px !important" />
-
-<h1 class="twelve">{{name}}</h1>
-<p>{{intro}}</p>
-
+<!--Beginning of users About page-->
+<img src="{{ pic }}" class="picture" style="max-width: 300px !important" />
+<div class = "Looks">
+  <h1 class="twelve">{{name}}</h1>
+    <p>{{intro}}</p>
+</div>
 {% endblock %} {% block education %}
 <div class="main_title">Education</div>
 <!-- <h1 style="text-align: center">Education</h1> -->
-<br />
+<br/>
 {% for k,v in edu.items() %}
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <div class="p">{{k}}</div>
-    </div>
-    <div class="flip-card-back">
-      <div class="p">{{v}}</div>
+      </div> 
+      <div class="flip-card-back">
+        <div class="p">{{v}}</div>
     </div>
   </div>
 </div>
+{% endfor %}
 <br />
-{% endfor %} {% endblock %} {% block work %}
+{% endblock %} 
+
+{% block work %}
 <div class="main_title">Work</div>
 <!-- <h1 style="text-align: center">Work</h1> -->
-{% for k,v in work.items() %}
-<div class="column2">
-  <button
-    type="button"
-    class="collapsible"
-    style="width: 700px; border-color: black; border-radius: 10px"
-  >
-    {{k}}
-  </button>
-  <div class="content_work">
-    <p>{{v}}</p>
+<div class="timeline">
+  {% for k,v in work.items() %}
+  <div class="timeline-container left">
+    <div class="tcontent">
+        <h2>{{k}}</h2>
+        <p>{{v}}</p>
+    </div>
   </div>
-</div>
-
-{% endfor %} {% endblock %} {% block hobbies %}
+{% endfor %}
+</div> 
+      <!--div class="column2">
+        <button
+        type="button"
+        class="collapsible"
+        style="width: 700px; border-color: black; border-radius: 10px"
+        >
+    </button>
+    <div class="content_work"-->
+{% endblock %}
+{% block hobbies %}
 <div class="main_title">Hobbies</div>
 <div class="container mt-4">
   <div class="row g-3">
@@ -168,8 +176,21 @@
     </div>
   </div>
   {% endblock %} {% block map %}
-  <div class="main_title">Interesting Map</div>
-        <iframe src="{{map.address}}" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="map"></div>
+        <h1 class="main_title">Lets'a Go!</h1>
+        <script>
+        function initMap() {
+          var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(44, -110),
+            mapTypeId: 'roadmap'
+          };
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      }
+      </script>
+        <img src = "https://maps.googleapis.com/maps/api/staticmap?zoom=0&scale=2&size=600x300&maptype=roadmap&format=png&markers=color:blue|label:A|Brooklyn,NY&markers=label:B|Brighton+Beach,NY&markers=color:Yellow|label:C|Seoul,SK&markers=label:D|London, UK&key=AIzaSyBIcptpufa72aMOJVan17Uf7b03fbI-1Ow"
+        alt="" >
+        <!--iframe src="{{map.address}}" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
   </div>
   {% endblock %}
 </div>

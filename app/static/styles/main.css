@@ -1,4 +1,3 @@
-p,
 h1,
 h2,
 h3,
@@ -6,29 +5,84 @@ h4,
 h5,
 h6,
 button {
-    font-family: "Roboto", serif;
+    font-family: "Press Start 2P", serif;
 }
 
 body {
-    background-color: #f5f5f9;
-    background-size: cover;
+    background-color: #5795ff;
+    background-size: contain;
     width: auto;
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: serif;
     margin: 0px;
     height: 100%;
 }
+/*container for About Section*/
+.about {
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(#5795ff, #b8cfec);
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    font-family: "Press Start 2P";
+}
+.nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top, white, pink);
+    -webkit-background-clip: inherit;
+            background-clip: inherit;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+#vid{
+    position: absolute;  
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.fa-twitter{
+    color:black;
+}
+.fa-github{
+    color: black;
+}
+
+.Looks h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    font-family: "Press Start 2P";
+}
+.Looks p{
+    box-shadow: 1px 3px 10px rgba(255, 252, 252, 0.5);
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    width: 35em;
+    color: rgb(19, 19, 19);
+    margin-top: 20px;
+    font-family: "Press Start 2P";
+    /*background: #9abfff;*/
+}
 .profile {
-    background-image: linear-gradient(#b8cfec, #f8e8ed);
+    /*background-image: linear-gradient(#b8cfec, #f8e8ed);
     /* background-color: #1d539f !important; */
     text-align: center;
     height: 320px;
     height: 100vh;
-    /* margin-bottom: 50px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
 }
 
 .profile h1 {
@@ -44,9 +98,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* display: flex; */
-    padding: 0px;
+    padding: 30px;
 }
 
+.profile p{
+    font-family: "Press Start 2P";
+}
 .picture {
     border-radius: 50%;
     max-width: 100%;
@@ -59,39 +116,28 @@ body {
 
 .profile .profile-picture {
     /* margin-bottom: 30px; */
-    height: 100px;
+    height: 250px;
 }
 
-.about {
-    overflow-x: hidden;
-    position: relative;
-    background-image: linear-gradient(#b8cfec, #f8e8ed);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-direction: column;
-}
 
 .education {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
-    background-image: linear-gradient( #f8e8ed, #f8e8ed);
+    background-image: linear-gradient( #5795ff,#b8cfec );
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .work {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     /* background-color: whitesmoke; */
-    background-image: linear-gradient( #f8e8ed, #d4f0f7);
-    height: 94vh;
+    background-image: linear-gradient( #b8cfec, whitesmoke);
+    height: 120vh;
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
@@ -100,11 +146,11 @@ body {
 }
 
 .hobbies {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     /* background-color: whitesmoke; */
-    background-image: linear-gradient( #d4f0f7, #d0d5f7);
-    height: 94vh;
+    background-image: linear-gradient( whitesmoke, #fcfcf4);
+    height: 110vh;
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
@@ -113,10 +159,10 @@ body {
 }
 
 .places {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     /* background-color: whitesmoke; */
-    background-image: linear-gradient( #d0d5f7, #b8cfec);
+    background-image: linear-gradient( #fcfcf4, #f1f1cc);
     height: 94vh;
     display: flex;
     justify-content: center;
@@ -124,12 +170,14 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
+.places .main_title{
+    margin-bottom: 100px;
+}
 .map {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     /* background-color: whitesmoke; */
-    background-image: linear-gradient( #b8cfec, #7fa0c9);
+    background-image: linear-gradient( #f1f1cc, #cfecb8);
     height: 94vh;
     display: flex;
     justify-content: center;
@@ -138,6 +186,9 @@ body {
     flex-direction: column;
 }
 
+.map .main_title{
+    margin-top: 20px;
+}
 .box {
     position: absolute;
     top: 50%;
@@ -166,11 +217,12 @@ body {
     font-size: 32px;
     color: #fff;
     letter-spacing: 2px;
-    background: #edc856;
+    background: blue;
     padding: 15px 25px;
     text-align: center;
-    width: 700px;
+    width: 500px;
     margin: 0 auto 25px;
+    font-family: "Press Start 2P"
 }
 
 .accordion_wrap ul {
@@ -457,3 +509,79 @@ body {
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+
+
+
+
+/*Hobbies Page*/
+.square{
+    display:flex;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 3px;
+    box-shadow: gray;
+  }
+  
+  /* Container around content */
+  .timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+
+  .tcontent{
+    background-color: whitesmoke;
+    border-radius: 5%;
+    top: 25px;
+    bottom: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 31px;
+    border: medium solid white;
+    border-width: 11px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.0);
+  }

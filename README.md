@@ -1,4 +1,4 @@
-# Know Your Chicken
+# Light Bloom
 
 This is a portfolio site for team members in Fried Chicken Pod.
 

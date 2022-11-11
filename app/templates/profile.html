@@ -3,38 +3,38 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta property="og:title" content="Personal Portfolio" />
     <meta property="og:description" content="My Personal Portfolio" />
     <meta property="og:url" content="{{ url }}" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Import -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+        integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link lang="sass" rel="stylesheet" href="/static/styles/main.css" />
     <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon" />
+    <!--Game Font Press Start 2P-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>{{ title }}</title>
   </head>
 
   <body>
-    <!-- Used Bootstrap instead -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent text-center ">
       <a href="/">
-        <div class="nav-logo">
-          <img src="/static/img/logo_chicken.png" />
-        </div>
+          <div class="nav-logo">
+          <img src="/static/img/logo_chicken.png" alt="\static\img\icons.png"  />
+          </div>
       </a>
       <button
         class="navbar-toggler"
@@ -47,7 +47,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse ml-auto" id="navbar">
         <ul class="navbar-nav">
           <!-- <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -70,15 +70,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#map">Map</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/hobbies">Collective Hobbies</a>
-          </li>
         </ul>
       </div>
     </nav>
 
-    <section class="about" id="about">
-      <div class="box text-center">{% block about %}{% endblock %}</div>
+    <section class="about" id="about animated slideInUp">
+      <video autoplay muted loop id="vid">
+          <source src='/static/Mario.mp4' type="video/mp4">
+      </video>
+      <div class="box text-center">{% block about %}{% endblock %}
+            <a href="https://github.com/Safox1" class="fa fa-github fa-4x"> </a>
+            <a href="https://www.linkedin.com/in/serenity-f-b51886151/" class="fa fa-linkedin fa-4x"></a>
+      </div>
     </section>
 
     <section class="education" id="education">
